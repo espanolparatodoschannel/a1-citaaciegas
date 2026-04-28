@@ -1,0 +1,180 @@
+{
+  "meta": {
+    "titulo_pagina": "Guía A1: Describir Personas en Español",
+    "titulo_hero": "Aprende a describir a las personas",
+    "objetivo": "Identificar rasgos físicos, usar adjetivos y confirmar información.",
+    "video_label": "Video 3: La cita a ciegas",
+    "video_url": "https://espanolparatodoschannel.github.io/ni.2_El_Mercado_de_los_Recuerdos_Olvidados/",
+    "ilustracion": "ele_a1_people_illustration_1777403668192.png"
+  },
+  "fichas": [
+    {
+      "id": 1,
+      "tipo": "expresiones",
+      "tema": "Pedir confirmación",
+      "uso": "¿Es verdad? / ¿Verdad?",
+      "explicacion": "Usamos esta expresión cuando queremos preguntar si algo es correcto. Es una forma fácil y natural de confirmar información.",
+      "ejemplos": {
+        "formato": "lista",
+        "items": ["Él tiene barba, <strong>¿verdad?</strong>", "Ella es rubia, <strong>¿verdad?</strong>"]
+      },
+      "consejo": "La palabra <strong>¿verdad?</strong> al final de la frase es muy común en español para pedir confirmación."
+    },
+    {
+      "id": 2,
+      "tipo": "expresiones",
+      "tema": "Confirmar la información",
+      "uso": "Sí, ...",
+      "explicacion": "Cuando alguien nos pregunta algo, respondemos con <strong>Sí</strong> + la información correcta.",
+      "ejemplos": {
+        "formato": "dialogo",
+        "items": [{ "pregunta": "¿Tiene los ojos marrones?", "respuesta": "Sí, marrones." }]
+      },
+      "consejo": "Empieza siempre con <strong>Sí</strong> y repite la información importante. Es claro y educado."
+    },
+    {
+      "id": 3,
+      "tipo": "vocabulario",
+      "tema": "Los adjetivos calificativos",
+      "uso": null,
+      "explicacion": "Los adjetivos calificativos son palabras que describen <strong>cómo es</strong> una persona o una cosa. Pueden hablar de cualidades físicas (color, tamaño, forma…) o de cómo se siente o cómo es su carácter.",
+      "ejemplos": {
+        "formato": "grid",
+        "items": ["Alto/a - Bajo/a", "Delgado/a - Gordo/a", "Guapo/a - Feo/a", "Joven - Mayor"]
+      },
+      "consejo": "Los adjetivos van después del verbo <strong>ser</strong> o <strong>tener</strong>: <em>Es alto / Tiene el pelo largo.</em>"
+    },
+    {
+      "id": 4,
+      "tipo": "vocabulario",
+      "tema": "Los adjetivos relacionales",
+      "uso": null,
+      "explicacion": "Estos adjetivos indican <strong>a qué tipo o grupo</strong> pertenece una persona. No describen una cualidad, sino una categoría.",
+      "ejemplos": {
+        "formato": "categorias",
+        "items": [
+          { "categoria": "Nacionalidad", "valores": "español/a, mexicano/a" },
+          { "categoria": "Relación", "valores": "amigo/a, hermano/a" }
+        ]
+      },
+      "consejo": "Muchos terminan en <strong>-o / -a</strong> igual que los calificativos: <em>español / española.</em>"
+    },
+    {
+      "id": 5,
+      "tipo": "gramatica",
+      "tema": "El género de los adjetivos",
+      "uso": null,
+      "explicacion": "En español, los adjetivos cambian según si hablamos de un <strong>hombre</strong> (masculino) o una <strong>mujer</strong> (femenino).",
+      "ejemplos": {
+        "formato": "comparacion",
+        "items": [
+          { "etiqueta": "Él", "valor": "Alt<span class='underline'>o</span>" },
+          { "etiqueta": "Ella", "valor": "Alt<span class='underline'>a</span>" }
+        ]
+      },
+      "consejo": "¡Mira siempre si la persona es hombre o mujer para elegir la terminación correcta!"
+    },
+    {
+      "id": 6,
+      "tipo": "gramatica",
+      "tema": "El número de los adjetivos",
+      "uso": null,
+      "explicacion": "Cuando hablamos de <strong>una</strong> persona → singular. Cuando hablamos de <strong>varias</strong> → plural (normalmente añadimos <strong>-s</strong>).",
+      "ejemplos": {
+        "formato": "transformacion",
+        "items": [
+          { "de": "Ojo marrón", "a": "Ojos marrones" },
+          { "de": "Él es joven", "a": "Ellos son jóvenes" }
+        ]
+      },
+      "consejo": "Si el adjetivo termina en consonante (como <em>joven</em>), el plural es <strong>jóvenes</strong>."
+    },
+    {
+      "id": 7,
+      "tipo": "reglas",
+      "tema": "¿Dónde va el adjetivo?",
+      "uso": null,
+      "explicacion": "En español, los adjetivos <strong>normalmente van después</strong> del nombre o después del verbo <strong>ser/tener</strong>.",
+      "ejemplos": {
+        "formato": "formula",
+        "items": [{ "correcto": "Pelo + negro", "incorrecto": "negro pelo" }]
+      },
+      "consejo": "Es diferente del inglés. En español decimos <strong>pelo largo</strong>, no <em>largo pelo</em>."
+    },
+    {
+      "id": 8,
+      "tipo": "vocabulario",
+      "tema": "Partes del cuerpo",
+      "uso": null,
+      "explicacion": "Estas palabras nos ayudan a describir el <strong>aspecto exterior</strong> de una persona.",
+      "ejemplos": {
+        "formato": "grid",
+        "items": ["El pelo", "Los ojos", "La nariz", "La boca", "La barba", "El bigote"]
+      },
+      "consejo": "Usamos mucho <strong>tener + parte del cuerpo</strong>: <em>Tiene el pelo rubio.</em>"
+    },
+    {
+      "id": 9,
+      "tipo": "vocabulario",
+      "tema": "Hombre o mujer",
+      "uso": null,
+      "explicacion": "En las descripciones usamos palabras diferentes según si es un <strong>chico/hombre</strong> o una <strong>chica/mujer</strong>.",
+      "ejemplos": {
+        "formato": "lista",
+        "items": ["Es un <strong>chico</strong> guapo.", "Es una <strong>chica</strong> guapa."]
+      },
+      "consejo": "Recuerda cambiar el adjetivo según el género: <strong>guapo ↔ guapa</strong>, <strong>alto ↔ alta</strong>."
+    },
+    {
+      "id": 10,
+      "tipo": "ortografia",
+      "tema": "La tilde diacrítica: él vs. el",
+      "uso": null,
+      "explicacion": "La tilde sirve para distinguir dos palabras que se escriben igual pero significan cosas diferentes.",
+      "ejemplos": {
+        "formato": "contraste",
+        "items": [
+          { "texto": "<strong>Él</strong> es rubio.", "nota": "(Él = He / Persona)" },
+          { "texto": "<strong>El</strong> pelo es rubio.", "nota": "(El = The / Artículo)" }
+        ]
+      },
+      "consejo": "<strong>Él</strong> (con tilde) = he (persona). <strong>El</strong> (sin tilde) = the (artículo)."
+    },
+    {
+      "id": 11,
+      "tipo": "vocabulario",
+      "tema": "Pelo o cabello",
+      "uso": null,
+      "explicacion": "En español hay palabras que significan exactamente lo mismo. Puedes usar cualquiera.",
+      "ejemplos": {
+        "formato": "ecuacion",
+        "items": ["Pelo", "Cabello"]
+      },
+      "consejo": "<strong>Pelo</strong> es más cotidiano y frecuente en nivel A1."
+    },
+    {
+      "id": 12,
+      "tipo": "expresiones",
+      "tema": "¿Cómo es…?",
+      "uso": "¿Cómo es…?",
+      "explicacion": "Usamos <strong>¿Cómo…?</strong> para preguntar por la descripción de una persona.",
+      "ejemplos": {
+        "formato": "pregunta",
+        "items": ["¿Cómo es tu hermano?"]
+      },
+      "consejo": "Es la pregunta más útil para pedir descripciones físicas o de carácter."
+    }
+  ],
+  "resumen": {
+    "titulo": "Cómo describir a una persona",
+    "intro": "Para describir bien a alguien, sigue este orden fácil:",
+    "pasos": [
+      { "texto": "Información general:", "ejemplo": "Se llama… / Es…", "color": "text-indigo-500" },
+      { "texto": "Aspecto físico:", "ejemplo": "Es alto/a, delgado/a…", "color": "text-emerald-500" },
+      { "texto": "Detalles:", "ejemplo": "Tiene el pelo largo y rubio. Tiene los ojos marrones.", "color": "text-amber-500" },
+      { "texto": "Otros:", "ejemplo": "Es guapo/a, simpático/a…", "color": "text-indigo-500" }
+    ],
+    "consejo": "Empieza siempre con <strong>Es…</strong> y <strong>Tiene…</strong>. Son los dos verbos más importantes para describir.",
+    "ejemplo_completo": "\"Él es mi hermano. Es alto y muy guapo. Tiene el pelo negro y los ojos marrones. Es muy simpático.\""
+  }
+}
