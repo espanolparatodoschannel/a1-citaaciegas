@@ -52,8 +52,9 @@ function renderEjemplos(ejemplos, cfg) {
     const { formato, items } = ejemplos;
 
     switch (formato) {
+
         case 'lista':
-            return `<div class="${cfg.bg} p-4 rounded-2xl mb-4 border ${cfg.border} italic space-y-2 text-sm">
+            return `<div class="${cfg.bg} p-4 rounded-2xl mb-4 border ${cfg.border} space-y-2 text-sm">
                 ${items.map(i => `<p>• ${i}</p>`).join('')}
             </div>`;
 
@@ -69,68 +70,10 @@ function renderEjemplos(ejemplos, cfg) {
                 ${items.map(i => `<div class="${cfg.bg} p-2 rounded-xl text-center text-xs font-bold border ${cfg.border}">${i}</div>`).join('')}
             </div>`;
 
-        case 'categorias':
-            return `<ul class="space-y-2 text-sm ${cfg.bg} p-4 rounded-2xl mb-4">
-                ${items.map(i => `<li><span class="font-bold ${cfg.badge}">${i.categoria}:</span> ${i.valores}</li>`).join('')}
-            </ul>`;
-
-        case 'comparacion':
-            return `<div class="flex justify-around items-center ${cfg.bg} p-4 rounded-2xl border ${cfg.border} mb-4">
-                <div class="text-center">
-                    <p class="text-xs uppercase text-slate-400 mb-1">${items[0].etiqueta}</p>
-                    <p class="font-bold text-indigo-600">${items[0].valor}</p>
-                </div>
-                <i class="fas fa-sync text-emerald-300"></i>
-                <div class="text-center">
-                    <p class="text-xs uppercase text-slate-400 mb-1">${items[1].etiqueta}</p>
-                    <p class="font-bold text-pink-600">${items[1].valor}</p>
-                </div>
-            </div>`;
-
-        case 'transformacion':
-            return `<div class="space-y-3 bg-white/60 p-4 rounded-2xl mb-4">
-                ${items.map(i => `
-                    <div class="flex justify-between text-sm">
-                        <span>${i.de}</span>
-                        <i class="fas fa-arrow-right text-slate-300"></i>
-                        <span class="font-bold">${i.a}</span>
-                    </div>`).join('')}
-            </div>`;
-
-        case 'formula':
-            return items.map(i => `
-                <div class="${cfg.bg} p-4 rounded-2xl mb-4 border ${cfg.border} text-sm font-mono">
-                    <p class="${cfg.badge} font-bold">${i.correcto}</p>
-                    <p class="text-slate-500 mt-2">// No: ${i.incorrecto}</p>
-                </div>`).join('');
-
-        case 'ecuacion':
-            return `<div class="flex items-center justify-center space-x-4 ${cfg.bg} p-4 rounded-2xl border ${cfg.border} mb-4">
-                <span class="font-bold">${items[0]}</span>
-                <i class="fas fa-equals text-amber-300"></i>
-                <span class="font-bold">${items[1]}</span>
-            </div>`;
-
-        case 'contraste':
-            return `<div class="${cfg.bg} p-5 rounded-2xl mb-4 border ${cfg.border} space-y-4">
-                <div>
-                    <p class="${cfg.badge} font-bold">${items[0].texto}</p>
-                    <p class="text-[10px] text-slate-500">${items[0].nota}</p>
-                </div>
-                <div class="border-t ${cfg.border} pt-4">
-                    <p class="text-slate-800 font-bold">${items[1].texto}</p>
-                    <p class="text-[10px] text-slate-500">${items[1].nota}</p>
-                </div>
-            </div>`;
-
-        case 'pregunta':
-            return `<div class="bg-indigo-600 text-white p-5 rounded-2xl shadow-inner mb-4">
-                <p class="text-indigo-200 text-[10px] uppercase font-bold mb-1">Pregunta:</p>
-                <p class="text-lg">${items[0]}</p>
-            </div>`;
-
         default:
-            return '';
+            return `<div class="${cfg.bg} p-4 rounded-2xl mb-4 border ${cfg.border} space-y-2 text-sm">
+                ${items.map(i => `<p>• ${i}</p>`).join('')}
+            </div>`;
     }
 }
 

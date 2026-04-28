@@ -16,7 +16,10 @@
       "explicacion": "Usamos esta expresión cuando queremos preguntar si algo es correcto. Es una forma fácil y natural de confirmar información.",
       "ejemplos": {
         "formato": "lista",
-        "items": ["Él tiene barba, <strong>¿verdad?</strong>", "Ella es rubia, <strong>¿verdad?</strong>"]
+        "items": [
+          "Él tiene barba, <strong>¿verdad?</strong>",
+          "Ella es rubia, <strong>¿verdad?</strong>"
+        ]
       },
       "consejo": "La palabra <strong>¿verdad?</strong> al final de la frase es muy común en español para pedir confirmación."
     },
@@ -28,7 +31,9 @@
       "explicacion": "Cuando alguien nos pregunta algo, respondemos con <strong>Sí</strong> + la información correcta.",
       "ejemplos": {
         "formato": "dialogo",
-        "items": [{ "pregunta": "¿Tiene los ojos marrones?", "respuesta": "Sí, marrones." }]
+        "items": [
+          { "pregunta": "¿Tiene los ojos marrones?", "respuesta": "Sí, marrones." }
+        ]
       },
       "consejo": "Empieza siempre con <strong>Sí</strong> y repite la información importante. Es claro y educado."
     },
@@ -51,10 +56,10 @@
       "uso": null,
       "explicacion": "Estos adjetivos indican <strong>a qué tipo o grupo</strong> pertenece una persona. No describen una cualidad, sino una categoría.",
       "ejemplos": {
-        "formato": "categorias",
+        "formato": "lista",
         "items": [
-          { "categoria": "Nacionalidad", "valores": "español/a, mexicano/a" },
-          { "categoria": "Relación", "valores": "amigo/a, hermano/a" }
+          "<strong>Nacionalidad:</strong> español/a, mexicano/a",
+          "<strong>Relación:</strong> amigo/a, hermano/a"
         ]
       },
       "consejo": "Muchos terminan en <strong>-o / -a</strong> igual que los calificativos: <em>español / española.</em>"
@@ -66,11 +71,8 @@
       "uso": null,
       "explicacion": "En español, los adjetivos cambian según si hablamos de un <strong>hombre</strong> (masculino) o una <strong>mujer</strong> (femenino).",
       "ejemplos": {
-        "formato": "comparacion",
-        "items": [
-          { "etiqueta": "Él", "valor": "Alt<span class='underline'>o</span>" },
-          { "etiqueta": "Ella", "valor": "Alt<span class='underline'>a</span>" }
-        ]
+        "formato": "grid",
+        "items": ["Él → Alto", "Ella → Alta", "Él → Guapo", "Ella → Guapa"]
       },
       "consejo": "¡Mira siempre si la persona es hombre o mujer para elegir la terminación correcta!"
     },
@@ -81,10 +83,10 @@
       "uso": null,
       "explicacion": "Cuando hablamos de <strong>una</strong> persona → singular. Cuando hablamos de <strong>varias</strong> → plural (normalmente añadimos <strong>-s</strong>).",
       "ejemplos": {
-        "formato": "transformacion",
+        "formato": "lista",
         "items": [
-          { "de": "Ojo marrón", "a": "Ojos marrones" },
-          { "de": "Él es joven", "a": "Ellos son jóvenes" }
+          "Ojo marrón → <strong>Ojos marrones</strong>",
+          "Él es joven → <strong>Ellos son jóvenes</strong>"
         ]
       },
       "consejo": "Si el adjetivo termina en consonante (como <em>joven</em>), el plural es <strong>jóvenes</strong>."
@@ -96,8 +98,11 @@
       "uso": null,
       "explicacion": "En español, los adjetivos <strong>normalmente van después</strong> del nombre o después del verbo <strong>ser/tener</strong>.",
       "ejemplos": {
-        "formato": "formula",
-        "items": [{ "correcto": "Pelo + negro", "incorrecto": "negro pelo" }]
+        "formato": "lista",
+        "items": [
+          "✓ <strong>Pelo negro</strong>",
+          "✗ <em>negro pelo</em>"
+        ]
       },
       "consejo": "Es diferente del inglés. En español decimos <strong>pelo largo</strong>, no <em>largo pelo</em>."
     },
@@ -121,7 +126,10 @@
       "explicacion": "En las descripciones usamos palabras diferentes según si es un <strong>chico/hombre</strong> o una <strong>chica/mujer</strong>.",
       "ejemplos": {
         "formato": "lista",
-        "items": ["Es un <strong>chico</strong> guapo.", "Es una <strong>chica</strong> guapa."]
+        "items": [
+          "Es un <strong>chico</strong> guapo.",
+          "Es una <strong>chica</strong> guapa."
+        ]
       },
       "consejo": "Recuerda cambiar el adjetivo según el género: <strong>guapo ↔ guapa</strong>, <strong>alto ↔ alta</strong>."
     },
@@ -132,10 +140,10 @@
       "uso": null,
       "explicacion": "La tilde sirve para distinguir dos palabras que se escriben igual pero significan cosas diferentes.",
       "ejemplos": {
-        "formato": "contraste",
+        "formato": "lista",
         "items": [
-          { "texto": "<strong>Él</strong> es rubio.", "nota": "(Él = He / Persona)" },
-          { "texto": "<strong>El</strong> pelo es rubio.", "nota": "(El = The / Artículo)" }
+          "<strong>Él</strong> es rubio. <em>(Él = He / Persona)</em>",
+          "<strong>El</strong> pelo es rubio. <em>(El = The / Artículo)</em>"
         ]
       },
       "consejo": "<strong>Él</strong> (con tilde) = he (persona). <strong>El</strong> (sin tilde) = the (artículo)."
@@ -147,20 +155,25 @@
       "uso": null,
       "explicacion": "En español hay palabras que significan exactamente lo mismo. Puedes usar cualquiera.",
       "ejemplos": {
-        "formato": "ecuacion",
-        "items": ["Pelo", "Cabello"]
+        "formato": "lista",
+        "items": [
+          "<strong>Pelo</strong> = <strong>Cabello</strong>"
+        ]
       },
       "consejo": "<strong>Pelo</strong> es más cotidiano y frecuente en nivel A1."
     },
     {
       "id": 12,
       "tipo": "expresiones",
-      "tema": "¿Cómo es…?",
+      "tema": "Preguntar por la descripción",
       "uso": "¿Cómo es…?",
       "explicacion": "Usamos <strong>¿Cómo…?</strong> para preguntar por la descripción de una persona.",
       "ejemplos": {
-        "formato": "pregunta",
-        "items": ["¿Cómo es tu hermano?"]
+        "formato": "lista",
+        "items": [
+          "¿Cómo es tu hermano?",
+          "¿Cómo es ella?"
+        ]
       },
       "consejo": "Es la pregunta más útil para pedir descripciones físicas o de carácter."
     }
