@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía A1: Describir Personas en Español</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+
+        :root {
+            --primary: #4f46e5;
+            --secondary: #10b981;
+            --accent: #f59e0b;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: #f0f2f5;
+            overflow-x: hidden;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .header-mesh {
+            background-color: #4f46e5;
+            background-image:
+                radial-gradient(at 0% 0%, hsla(253, 100%, 70%, 1) 0, transparent 50%),
+                radial-gradient(at 50% 0%, hsla(225, 100%, 60%, 1) 0, transparent 50%),
+                radial-gradient(at 100% 0%, hsla(270, 100%, 65%, 1) 0, transparent 50%);
+        }
+
+        .card-gradient-1 { background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%); }
+        .card-gradient-2 { background: linear-gradient(135deg, #34d399 0%, #10b981 100%); }
+        .card-gradient-3 { background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%); }
+        .card-gradient-4 { background: linear-gradient(135deg, #f43f5e 0%, #e11d48 100%); }
+
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .ficha-card {
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            opacity: 0;
+            transform: translateY(30px);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .ficha-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Empuja el contenido interior para que llene toda la altura */
+        .ficha-card > div:last-child {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* Scroll to Top */
+        #scrollTopBtn {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 48px;
+            height: 48px;
+            background: #4f46e5;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            font-size: 18px;
+            cursor: pointer;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 24px rgba(79, 70, 229, 0.4);
+            z-index: 999;
+            transition: all 0.3s ease;
+        }
+
+        #scrollTopBtn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(79, 70, 229, 0.5);
+        }
+
+        .hero-img-container { animation: float 6s ease-in-out infinite; }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+        }
+
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+
+<body class="text-slate-800">
+
+    <!-- Header / Hero -->
+    <header class="header-mesh text-white pt-12 pb-20 md:py-24 px-4 shadow-2xl relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="1" />
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grid)" />
+            </svg>
+        </div>
+        
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between relative z-10 text-center md:text-left">
+            <div class="md:w-3/5 mb-10 md:mb-0">
+                <!-- Logo del canal -->
+                <img src="Logo Español para todos_transp.png" 
+                     alt="Logo Español Para Todos" 
+                     class="h-14 md:h-16 mx-auto md:mx-0 mb-6 bg-white rounded-full p-1.5 shadow-lg">
+                <a href="https://espanolparatodoschannel.github.io/ni.2_El_Mercado_de_los_Recuerdos_Olvidados/" 
+                   target="_blank"
+                   class="inline-block bg-white/20 hover:bg-white/30 backdrop-blur-md px-4 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest mb-6 transition-all border border-white/20 group">
+                    Video 3: La cita a ciegas <i class="fas fa-external-link-alt ml-2 opacity-50 group-hover:opacity-100"></i>
+                </a>
+                <h1 class="text-4xl sm:text-5xl md:text-7xl font-black mb-8 leading-tight">
+                    Aprende a describir <br><span class="text-indigo-200">a las personas</span>
+                </h1>
+                
+                <!-- Objetivo Estilo Botón -->
+                <p class="text-lg md:text-xl opacity-90 font-light max-w-2xl mx-auto md:mx-0 leading-relaxed flex flex-col md:flex-row items-center gap-3">
+                    <span class="bg-white/20 backdrop-blur-md text-white border border-white/30 px-4 py-1.5 rounded-xl font-bold text-sm tracking-wider">Objetivo</span>
+                    <span>Identificar rasgos físicos, usar adjetivos y confirmar información.</span>
+                </p>
+            </div>
+            
+            <div class="md:w-2/5 flex justify-center hero-img-container">
+                <img src="ele_a1_people_illustration_1777403668192.png" alt="Ilustración Nivel A1"
+                    class="max-w-[280px] sm:max-w-xs md:max-w-full h-auto drop-shadow-2xl rounded-3xl">
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-12 md:py-20">
+        <div id="fichasGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 items-stretch">
+
+            <!-- 1. Pedir confirmación -->
+            <section class="ficha-card glass-effect rounded-3xl overflow-hidden shadow-lg border border-white/40">
+                <div class="p-1 card-gradient-1"></div>
+                <div class="p-6 md:p-8">
+                    <span class="text-xs font-bold uppercase tracking-widest text-indigo-600 mb-2 block">1. Expresiones</span>
+                    <h2 class="text-2xl font-bold mb-3">¿Es verdad? / ¿Verdad?</h2>
+                    <p class="mb-5 text-slate-700 leading-relaxed text-sm">Usamos esta expresión cuando queremos preguntar si algo es correcto. Es una forma fácil y natural de confirmar información.</p>
+                    <div class="bg-indigo-50 p-4 rounded-2xl mb-4 border border-indigo-100 italic space-y-2 text-sm">
+                        <p>• Él tiene barba, <strong>¿verdad?</strong></p>
+                        <p>• Ella es rubia, <strong>¿verdad?</strong></p>
+                    </div>
+                    <div class="mt-auto pt-4 border-t border-slate-100">
+                        <p class="text-xs text-indigo-500 font-semibold"><i class="fas fa-lightbulb mr-1"></i> La palabra <strong>¿verdad?</strong> al final de la frase es muy común en español para pedir confirmación.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2. Confirmar la información -->
+            <section class="ficha-card glass-effect rounded-3xl overflow-hidden shadow-lg border border-white/40">
+                <div class="p-1 card-gradient-1"></div>
+                <div class="p-6 md:p-8">
+                    <span class="text-xs font-bold uppercase tracking-widest text-indigo-600 mb-2 block">2. Expresiones</span>
+                    <h2 class="text-2xl font-bold mb-3">Sí, ...</h2>
+                    <p class="mb-5 text-slate-700 leading-relaxed text-sm">Cuando alguien nos pregunta algo, respondemos con <strong>Sí</strong> + la información correcta.</p>
+                    <div class="bg-slate-100 p-4 rounded-2xl mb-4 text-sm">
+                        <p class="text-slate-500 italic mb-1">— ¿Tiene los ojos marrones?</p>
+                        <p class="font-bold text-emerald-600">→ Sí, marrones.</p>
+                    </div>
+                    <div class="mt-auto pt-4 border-t border-slate-100">
+                        <p class="text-xs text-indigo-500 font-semibold"><i class="fas fa-lightbulb mr-1"></i> Empieza siempre con <strong>Sí</strong> y repite la información importante. Es claro y educado.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. Adjetivos calificativos -->
+            <section class="ficha-card glass-effect rounded-3xl overflow-hidden shadow-lg border border-white/40">
+                <div class="p-1 card-gradient-3"></div>
+                <div class="p-6 md:p-8">
+                    <span class="text-xs font-bold uppercase tracking-widest text-amber-600 mb-2 block">3. Vocabulario</span>
+                    <h2 class="text-2xl font-bold mb-3">Los adjetivos calificativos</h2>
+                    <p class="mb-4 text-slate-700 text-sm">Los adjetivos calificativos son palabras que describen <strong>cómo es</strong> una persona o una cosa. Pueden hablar de cualidades físicas (color, tamaño, forma…) o de cómo se siente o cómo es su carácter.</p>
+                    <div class="grid grid-cols-2 gap-2 mb-4">
+                        <div class="bg-amber-50 p-2 rounded-xl text-center text-xs font-bold border border-amber-100">Alto/a - Bajo/a</div>
+                        <div class="bg-amber-50 p-2 rounded-xl text-center text-xs font-bold border border-amber-100">Delgado/a - Gordo/a</div>
+                        <div class="bg-amber-50 p-2 rounded-xl text-center text-xs font-bold border border-amber-100">Guapo/a - Feo/a</div>
+                        <div class="bg-amber-50 p-2 rounded-xl text-center text-xs font-bold border border-amber-100">Joven - Mayor</div>
+                    </div>
+                    <div class="mt-auto pt-4 border-t border-slate-100">
+                        <p class="text-xs text-indigo-500 font-semibold"><i class="fas fa-lightbulb mr-1"></i> Los adjetivos van después del verbo <strong>ser</strong> o <strong>tener</strong>: <em>Es alto / Tiene el pelo largo.</em></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. Adjetivos relacionales -->
+            <section class="ficha-card glass-effect rounded-3xl overflow-hidden shadow-lg border border-white/40">
+                <div class="p-1 card-gradient-3"></div>
+                <div class="p-6 md:p-8">
+                    <span class="text-xs font-bold uppercase tracking-widest text-amber-600 mb-2 block">4. Vocabulario</span>
+                    <h2 class="text-2xl font-bold mb-3">Los adjetivos relacionales</h2>
+                    <p class="mb-4 text-slate-700 text-sm">Estos adjetivos indican <strong>a qué tipo o grupo</strong> pertenece una persona (nacionalidad, profesión, relación familiar, etc.). No describen una cualidad, sino una categoría.</p>
+                    <ul class="space-y-2 text-sm bg-amber-50/50 p-4 rounded-2xl">
+                        <li><span class="font-bold text-amber-700">Nacionalidad:</span> español/a, mexicano/a</li>
+                        <li><span class="font-bold text-amber-700">Relación:</span> amigo/a, hermano/a</li>
+                    </ul>
+                    <div class="mt-auto pt-4 border-t border-slate-100">
+                        <p class="text-xs text-indigo-500 font-semibold"><i class="fas fa-lightbulb mr-1"></i> Muchos terminan en <strong>-o / -a</strong> igual que los calificativos: <em>español / española.</em></p>
+                    </div>
+                </div>
+            </section>
+            <section class="ficha-card glass-effect rounded-3xl overflow-hidden shadow-lg border border-white/40">
+                <div class="p-1 card-gradient-2"></div>
+                <div class="p-6 md:p-8">
+                    <span class="text-xs font-bold uppercase tracking-widest text-emerald-600 mb-2 block">5. Gramática</span>
+                    <h2 class="text-2xl font-bold mb-3">El género de los adjetivos</h2>
+                    <p class="mb-5 text-slate-700 text-sm">En español, los adjetivos cambian según si hablamos de un <strong>hombre</strong> (masculino) o una <strong>mujer</strong> (femenino).</p>
+                    <div class="flex justify-around items-center bg-emerald-50 p-4 rounded-2xl border border-emerald-100 mb-4">
+                        <div class="text-center">
+                            <p class="text-xs uppercase text-slate-400 mb-1">Él</p>
+                            <p class="font-bold text-indigo-600">Alt<span class="underline">o</span></p>
+                        </div>
+                        <i class="fas fa-sync text-emerald-300"></i>
+                        <div class="text-center">
+                            <p class="text-xs uppercase text-slate-400 mb-1">Ella</p>
+                            <p class="font-bold text-pink-600">Alt<span class="underline">a</span></p>
+                        </div>
+                    </div>
+                    <div class="mt-auto pt-4 border-t border-slate-100">
+                        <p class="text-xs text-indigo-500 font-semibold"><i class="fas fa-lightbulb mr-1"></i> ¡Mira siempre si la persona es hombre o mujer para elegir la terminación correcta!</p>
+                    </div>
+                </div>
+            </section>
+            <section class="ficha-card glass-effect rounded-3xl overflow-hidden shadow-lg border border-white/40">
+                <div class="p-1 card-gradient-2"></div>
+                <div class="p-6 md:p-8">
+                    <span class="text-xs font-bold uppercase tracking-widest text-emerald-600 mb-2 block">6. Gramática</span>
+                    <h2 class="text-2xl font-bold mb-3">El número de los adjetivos</h2>
+                    <p class="mb-4 text-slate-700 text-sm">Cuando hablamos de <strong>una</strong> persona o cosa → singular. Cuando hablamos de <strong>varias</strong> → plural (normalmente añadimos <strong>-s</strong>).</p>
+                    <div class="space-y-3 bg-white/60 p-4 rounded-2xl">
+                        <div class="flex justify-between text-sm">
+                            <span>Ojo marrón</span> <i class="fas fa-arrow-right text-slate-300"></i> <span class="font-bold">Ojos marrones</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span>Él es joven</span> <i class="fas fa-arrow-right text-slate-300"></i> <span class="font-bold">Ellos son jóvenes</span>
+                        </div>
+                    </div>
+                    <div class="mt-auto pt-4 border-t border-slate-100">
+                        <p class="text-xs text-indigo-500 font-semibold"><i class="fas fa-lightbulb mr-1"></i> Si el adjetivo termina en consonante (como <em>joven</em>), el plural es <strong>jóvenes</strong>.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="ficha-card glass-effect rounded-3xl overflow-hidden shadow-lg border border-white/40">
+                <div class="p-1 card-gradient-2"></div>
+                <div class="p-6 md:p-8">
+                    <span class="text-xs font-bold uppercase tracking-widest text-emerald-600 mb-2 block">7. Reglas</span>
+                    <h2 class="text-2xl font-bold mb-3">¿Dónde va el adjetivo?</h2>
+                    <p class="mb-5 text-slate-700 text-sm">En español, los adjetivos <strong>normalmente van después</strong> del nombre o después del verbo <strong>ser/tener</strong>.</p>
+                    <div class="bg-emerald-50 p-4 rounded-2xl mb-4 border border-emerald-100 text-sm font-mono">
+                        <p class="text-emerald-700 font-bold">Pelo <span class="text-slate-400">+</span> negro</p>
+                        <p class="text-slate-500 mt-2">// No: negro pelo</p>
+                    </div>
+                    <div class="mt-auto pt-4 border-t border-slate-100">
+                        <p class="text-xs text-indigo-500 font-semibold"><i class="fas fa-lightbulb mr-1"></i> Es diferente del inglés. En español decimos <strong>pelo largo</strong>, no <em>largo pelo</em>.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="ficha-card glass-effect rounded-3xl overflow-hidden shadow-lg border border-white/40">
+                <div class="p-1 card-gradient-3"></div>
+                <div class="p-6 md:p-8">
+                    <span class="text-xs font-bold uppercase tracking-widest text-amber-600 mb-2 block">8. Vocabulario</span>
+                    <h2 class="text-2xl font-bold mb-3">Partes del cuerpo</h2>
+                    <p class="mb-5 text-slate-700 text-sm">Estas palabras nos ayudan a describir el <strong>aspecto exterior</strong> de una persona.</p>
+                    <div class="grid grid-cols-2 gap-x-4 gap-y-2 text-sm bg-white/50 p-4 rounded-2xl border border-white">
+                        <span>• El pelo</span> <span>• Los ojos</span>
+                        <span>• La nariz</span> <span>• La boca</span>
+                        <span>• La barba</span> <span>• El bigote</span>
+                    </div>
+                    <div class="mt-auto pt-4 border-t border-slate-100">
+                        <p class="text-xs text-indigo-500 font-semibold"><i class="fas fa-lightbulb mr-1"></i> Usamos mucho <strong>tener + parte del cuerpo</strong>: <em>Tiene el pelo rubio.</em></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 9. Sexo -->
+            <section class="ficha-card glass-effect rounded-3xl overflow-hidden shadow-lg border border-white/40">
+                <div class="p-1 card-gradient-3"></div>
+                <div class="p-6 md:p-8">
+                    <span class="text-xs font-bold uppercase tracking-widest text-amber-600 mb-2 block">9. Vocabulario</span>
+                    <h2 class="text-2xl font-bold mb-3">Hombre o mujer</h2>
+                    <p class="mb-5 text-slate-700 text-sm">En las descripciones usamos palabras diferentes según si es un <strong>chico/hombre</strong> o una <strong>chica/mujer</strong>.</p>
+                    <div class="space-y-2">
+                        <div class="bg-indigo-50 p-3 rounded-xl text-sm">Es un <strong>chico</strong> guapo.</div>
+                        <div class="bg-pink-50 p-3 rounded-xl text-sm">Es una <strong>chica</strong> guapa.</div>
+                    </div>
+                    <div class="mt-auto pt-4 border-t border-slate-100">
+                        <p class="text-xs text-indigo-500 font-semibold"><i class="fas fa-lightbulb mr-1"></i> Recuerda cambiar el adjetivo según el género: <strong>guapo ↔ guapa</strong>, <strong>alto ↔ alta</strong>.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="ficha-card glass-effect rounded-3xl overflow-hidden shadow-lg border border-white/40">
+                <div class="p-1 card-gradient-4"></div>
+                <div class="p-6 md:p-8">
+                    <span class="text-xs font-bold uppercase tracking-widest text-rose-600 mb-2 block">10. Ortografía</span>
+                    <h2 class="text-2xl font-bold mb-3">La tilde diacrítica: él vs. el</h2>
+                    <p class="mb-5 text-slate-700 text-sm">La tilde sirve para distinguir dos palabras que se escriben igual pero significan cosas diferentes.</p>
+                    <div class="bg-rose-50 p-5 rounded-2xl mb-4 border border-rose-100 space-y-4">
+                        <div>
+                            <p class="text-rose-600 font-bold">Él <span class="text-slate-600 font-normal">es rubio.</span></p>
+                            <p class="text-[10px] text-slate-500">(Él = He / Persona)</p>
+                        </div>
+                        <div class="border-t border-rose-100 pt-4">
+                            <p class="text-slate-800 font-bold">El <span class="text-slate-600 font-normal">pelo es rubio.</span></p>
+                            <p class="text-[10px] text-slate-500">(El = The / Artículo)</p>
+                        </div>
+                    </div>
+                    <div class="mt-auto pt-4 border-t border-slate-100">
+                        <p class="text-xs text-indigo-500 font-semibold"><i class="fas fa-lightbulb mr-1"></i> <strong>Él</strong> (con tilde) = he (persona). <strong>El</strong> (sin tilde) = the (artículo).</p>
+                    </div>
+                </div>
+            </section>
+            <section class="ficha-card glass-effect rounded-3xl overflow-hidden shadow-lg border border-white/40">
+                <div class="p-1 card-gradient-3"></div>
+                <div class="p-6 md:p-8">
+                    <span class="text-xs font-bold uppercase tracking-widest text-amber-600 mb-2 block">11. Vocabulario</span>
+                    <h2 class="text-2xl font-bold mb-3">Pelo o cabello</h2>
+                    <p class="mb-5 text-slate-700 text-sm">En español hay palabras que significan exactamente lo mismo. Puedes usar cualquiera.</p>
+                    <div class="flex items-center justify-center space-x-4 bg-amber-50 p-4 rounded-2xl border border-amber-100">
+                        <span class="font-bold">Pelo</span>
+                        <i class="fas fa-equals text-amber-300"></i>
+                        <span class="font-bold">Cabello</span>
+                    </div>
+                    <div class="mt-auto pt-4 border-t border-slate-100">
+                        <p class="text-xs text-indigo-500 font-semibold"><i class="fas fa-lightbulb mr-1"></i> <strong>Pelo</strong> es más cotidiano y frecuente en nivel A1.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 12. ¿Cómo es...? -->
+            <section class="ficha-card glass-effect rounded-3xl overflow-hidden shadow-lg border border-white/40">
+                <div class="p-1 card-gradient-1"></div>
+                <div class="p-6 md:p-8">
+                    <span class="text-xs font-bold uppercase tracking-widest text-indigo-600 mb-2 block">12. Expresiones</span>
+                    <h2 class="text-2xl font-bold mb-3">¿Cómo es…?</h2>
+                    <p class="mb-5 text-slate-700 text-sm">Usamos <strong>¿Cómo…?</strong> para preguntar por la descripción de una persona (sin necesidad de saber si es masculino o femenino al principio).</p>
+                    <div class="bg-indigo-600 text-white p-5 rounded-2xl shadow-inner">
+                        <p class="text-indigo-200 text-[10px] uppercase font-bold mb-1">Pregunta:</p>
+                        <p class="text-lg">¿Cómo es tu hermano?</p>
+                    </div>
+                    <div class="mt-auto pt-4 border-t border-slate-100">
+                        <p class="text-xs text-indigo-500 font-semibold"><i class="fas fa-lightbulb mr-1"></i> Es la pregunta más útil para pedir descripciones físicas o de carácter.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="ficha-card glass-effect rounded-[32px] md:rounded-[40px] overflow-hidden shadow-2xl border border-white/40 md:col-span-2 lg:col-span-3">
+                <div class="p-2 bg-gradient-to-r from-indigo-500 via-emerald-500 to-amber-500"></div>
+                <div class="p-8 md:p-16 flex flex-col lg:flex-row items-center gap-10">
+                    <div class="lg:w-1/2">
+                        <h2 class="text-3xl md:text-5xl font-black mb-6 leading-tight">Cómo describir <br><span class="text-indigo-600">a una persona</span></h2>
+                        <p class="mb-6 text-slate-500 italic">Para describir bien a alguien, sigue este orden fácil:</p>
+                        <ol class="space-y-4 text-slate-700 list-decimal list-inside font-medium text-sm md:text-base">
+                            <li>Información general: <span class="text-indigo-500 font-bold">Se llama… / Es…</span></li>
+                            <li>Aspecto físico: <span class="text-emerald-500 font-bold">Es alto/a, delgado/a…</span></li>
+                            <li>Detalles: <span class="text-amber-500 font-bold">Tiene el pelo largo y rubio. Tiene los ojos marrones.</span></li>
+                            <li>Otros: <span class="text-indigo-500 font-bold">Es guapo/a, simpático/a…</span></li>
+                        </ol>
+                        <div class="mt-8 p-4 bg-amber-50 rounded-2xl border border-amber-100 text-xs md:text-sm">
+                            <p class="font-bold text-amber-800 mb-1">💡 Consejo para A1:</p>
+                            <p>Empieza siempre con <strong>Es…</strong> y <strong>Tiene…</strong>. Son los dos verbos más importantes para describir.</p>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2 bg-slate-900 text-white p-8 rounded-[2.5rem] shadow-2xl">
+                        <p class="text-indigo-400 font-bold text-xs mb-4 uppercase tracking-widest">Ejemplo completo:</p>
+                        <p class="italic text-xl md:text-2xl leading-relaxed">
+                            "Él es mi hermano. Es <span class="text-amber-400 underline">alto</span> y muy <span class="text-emerald-400 underline">guapo</span>. Tiene el <span class="text-indigo-300 underline">pelo negro</span> y los <span class="text-indigo-300 underline">ojos marrones</span>. Es muy simpático."
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 pt-16 pb-10 mt-12">
+        <div class="max-w-4xl mx-auto px-6 flex flex-col items-center text-center gap-6">
+            
+            <!-- Logo -->
+            <img src="Logo Español para todos_transp.png" 
+                 alt="Logo Español Para Todos" 
+                 class="h-20 bg-white rounded-full p-2 shadow-xl">
+
+            <!-- Descripción -->
+            <p class="text-slate-400 text-sm max-w-sm leading-relaxed">
+                Material pedagógico para el nivel <strong class="text-white">A1</strong>. Aprende español de forma natural y progresiva.
+            </p>
+
+            <!-- Enlace YouTube -->
+            <a href="https://www.youtube.com/@Espanolparatodos-channel" 
+               target="_blank"
+               class="inline-flex items-center gap-3 bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-2xl font-bold text-sm transition-all hover:scale-105 shadow-lg">
+                <i class="fab fa-youtube text-xl"></i>
+                Visita nuestro canal
+            </a>
+
+            <!-- Divider -->
+            <div class="w-full border-t border-white/10 pt-6">
+                <p class="text-xs opacity-40">&copy; 2024 Español Para Todos &mdash; Guía de Nivel A1</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón Scroll to Top -->
+    <button id="scrollTopBtn" aria-label="Volver arriba">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        const cards = document.querySelectorAll('.ficha-card');
+
+        function showAllCards() {
+            cards.forEach((card, index) => {
+                card.style.display = 'flex';
+                setTimeout(() => { card.classList.add('visible'); }, index * 120);
+            });
+        }
+
+        window.addEventListener('DOMContentLoaded', showAllCards);
+
+        // Scroll to Top
+        const scrollBtn = document.getElementById('scrollTopBtn');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 400) {
+                scrollBtn.style.display = 'flex';
+            } else {
+                scrollBtn.style.display = 'none';
+            }
+        });
+        scrollBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+
+</html>
