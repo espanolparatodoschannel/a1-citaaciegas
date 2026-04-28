@@ -146,7 +146,8 @@ function buildFicha(ficha, index) {
             <div class="p-1 ${cfg.gradient}"></div>
             <div class="p-6 md:p-8">
                 <span class="text-xs font-bold uppercase tracking-widest ${cfg.badge} mb-2 block">${label}</span>
-                <h2 class="text-2xl font-bold mb-3">${ficha.uso || ficha.tema}</h2>
+                <h2 class="text-2xl font-bold mb-2">${ficha.tema}</h2>
+                ${ficha.uso ? `<div class="inline-block px-3 py-1 rounded-xl text-sm font-bold mb-4 ${cfg.bg} ${cfg.badge} border ${cfg.border}">${ficha.uso}</div>` : ''}
                 <p class="mb-4 text-slate-700 leading-relaxed text-sm">${ficha.explicacion}</p>
                 ${renderEjemplos(ficha.ejemplos, cfg)}
                 <div class="mt-auto pt-4 border-t border-slate-100">
