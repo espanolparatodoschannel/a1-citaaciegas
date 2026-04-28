@@ -7,98 +7,7 @@
     <title>Guía A1: Describir Personas en Español</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
-
-        :root {
-            --primary: #4f46e5;
-            --secondary: #10b981;
-            --accent: #f59e0b;
-        }
-
-        body {
-            font-family: 'Outfit', sans-serif;
-            background-color: #f0f2f5;
-            overflow-x: hidden;
-            -webkit-tap-highlight-color: transparent;
-        }
-
-        .header-mesh {
-            background-color: #4f46e5;
-            background-image:
-                radial-gradient(at 0% 0%, hsla(253, 100%, 70%, 1) 0, transparent 50%),
-                radial-gradient(at 50% 0%, hsla(225, 100%, 60%, 1) 0, transparent 50%),
-                radial-gradient(at 100% 0%, hsla(270, 100%, 65%, 1) 0, transparent 50%);
-        }
-
-        .card-gradient-1 { background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%); }
-        .card-gradient-2 { background: linear-gradient(135deg, #34d399 0%, #10b981 100%); }
-        .card-gradient-3 { background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%); }
-        .card-gradient-4 { background: linear-gradient(135deg, #f43f5e 0%, #e11d48 100%); }
-
-        .glass-effect {
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-        }
-
-        .ficha-card {
-            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            opacity: 0;
-            transform: translateY(30px);
-            display: flex;
-            flex-direction: column;
-        }
-
-        .ficha-card.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* Empuja el contenido interior para que llene toda la altura */
-        .ficha-card > div:last-child {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        /* Scroll to Top */
-        #scrollTopBtn {
-            position: fixed;
-            bottom: 24px;
-            right: 24px;
-            width: 48px;
-            height: 48px;
-            background: #4f46e5;
-            color: white;
-            border: none;
-            border-radius: 50%;
-            font-size: 18px;
-            cursor: pointer;
-            display: none;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 8px 24px rgba(79, 70, 229, 0.4);
-            z-index: 999;
-            transition: all 0.3s ease;
-        }
-
-        #scrollTopBtn:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 30px rgba(79, 70, 229, 0.5);
-        }
-
-        .hero-img-container { animation: float 6s ease-in-out infinite; }
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-15px); }
-        }
-
-        .no-scrollbar::-webkit-scrollbar { display: none; }
-        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="text-slate-800">
@@ -422,31 +331,7 @@
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <script>
-        const cards = document.querySelectorAll('.ficha-card');
-
-        function showAllCards() {
-            cards.forEach((card, index) => {
-                card.style.display = 'flex';
-                setTimeout(() => { card.classList.add('visible'); }, index * 120);
-            });
-        }
-
-        window.addEventListener('DOMContentLoaded', showAllCards);
-
-        // Scroll to Top
-        const scrollBtn = document.getElementById('scrollTopBtn');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 400) {
-                scrollBtn.style.display = 'flex';
-            } else {
-                scrollBtn.style.display = 'none';
-            }
-        });
-        scrollBtn.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-    </script>
+    <script src="main.js"></script>
 </body>
 
 </html>
