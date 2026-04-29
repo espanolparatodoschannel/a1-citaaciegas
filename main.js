@@ -159,7 +159,7 @@ async function init() {
         document.title = meta.titulo_pagina;
         document.getElementById('hero-title').innerHTML =
             meta.titulo_hero.replace(' a las', '<br><span class="text-indigo-200"> a las</span>');
-        document.getElementById('objetivo').textContent = meta.objetivo;
+        document.getElementById('objetivo').innerHTML = meta.objetivo;
         document.getElementById('video-link').href = meta.video_url;
         document.getElementById('video-label').textContent = meta.video_label;
         document.getElementById('hero-img').src = meta.ilustracion;
