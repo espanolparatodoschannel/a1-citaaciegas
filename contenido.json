@@ -11,171 +11,158 @@
     {
       "id": 1,
       "categoria": "Funciones",
-      "tema": "Pedir confirmación",
-      "explicacion": "Usamos esta expresión cuando queremos preguntar si algo es correcto. Es una forma fácil y natural de confirmar información.",
+      "tema": "Dirigirse a alguien",
+      "explicacion": "Estas expresiones sirven para llamar la atención de las personas usando su nombre propio de una forma amable y directa.",
       "ejemplos": {
         "formato": "lista",
-        "items": [
-          "Él tiene barba, <strong>¿verdad?</strong>",
-          "Ella es rubia, <strong>¿verdad?</strong>"
-        ]
+        "items": ["¡Hola, <strong>Elena</strong>!", "Perdona, Juan, ¿tienes un momento?"]
       },
-      "vocabulario_util": "¿verdad?, ¿no?, correcto, exacto",
-      "consejo": "La palabra <strong>¿verdad?</strong> al final de la frase es muy común en español para pedir confirmación."
+      "vocabulario_util": "Hola, oye, perdona, disculpa",
+      "consejo": "Usa siempre el nombre de la persona para crear una conexión más cercana y amistosa al hablar."
     },
     {
       "id": 2,
       "categoria": "Funciones",
-      "tema": "Confirmar la información",
-      "explicacion": "Cuando alguien nos pregunta algo, respondemos con <strong>Sí</strong> + la información correcta.",
+      "tema": "Presentar a alguien",
+      "explicacion": "Utilizamos frases especiales para introducir a una persona nueva en un grupo y que todos puedan conocer su nombre.",
       "ejemplos": {
-        "formato": "dialogo",
-        "items": [
-          { "pregunta": "¿Tiene los ojos marrones?", "respuesta": "Sí, marrones." }
-        ]
+        "formato": "lista",
+        "items": ["Te presento a mi amiga <strong>Lucía</strong>.", "Este es mi hermano Carlos."]
       },
-      "vocabulario_util": "sí, claro, exacto, efectivamente",
-      "consejo": "Empieza siempre con <strong>Sí</strong> y repite la información importante. Es claro y educado."
+      "vocabulario_util": "presentar, amigo, hermano, conocido",
+      "consejo": "Al presentar a un amigo, puedes añadir su relación contigo para dar más información a los demás."
     },
     {
       "id": 3,
-      "categoria": "Gramática",
-      "tema": "Los adjetivos calificativos",
-      "explicacion": "Los adjetivos calificativos son palabras que describen <strong>cómo es</strong> una persona o una cosa. Pueden hablar de cualidades físicas (color, tamaño, forma…) o de cómo se siente o cómo es su carácter.",
+      "categoria": "Funciones",
+      "tema": "Responder a una presentación",
+      "explicacion": "Son palabras de cortesía que usamos inmediatamente después de conocer a alguien nuevo para demostrar una buena educación básica.",
       "ejemplos": {
-        "formato": "grid",
-        "items": ["Alto/a - Bajo/a", "Delgado/a - Gordo/a", "Guapo/a - Feo/a", "Joven - Mayor"]
+        "formato": "dialogo",
+        "items": [{"pregunta": "Te presento a Luis.", "respuesta": "<strong>Mucho gusto</strong>."}]
       },
-      "vocabulario_util": "alto, bajo, delgado, gordo, guapo, feo",
-      "consejo": "Los adjetivos van después del verbo <strong>ser</strong> o <strong>tener</strong>: <em>Es alto / Tiene el pelo largo.</em>"
+      "vocabulario_util": "gusto, placer, encantado, encantada",
+      "consejo": "Si eres hombre di \"encantado\" y si eres mujer di \"encantada\" para que la concordancia sea correcta."
     },
     {
       "id": 4,
       "categoria": "Gramática",
-      "tema": "Los adjetivos relacionales",
-      "explicacion": "Estos adjetivos indican <strong>a qué tipo o grupo</strong> pertenece una persona. No describen una cualidad, sino una categoría.",
+      "tema": "El artículo definido",
+      "explicacion": "Usamos las palabras el o la para hablar de cosas o personas específicas que ya conocemos en la conversación.",
       "ejemplos": {
-        "formato": "lista",
-        "items": [
-          "<strong>Nacionalidad:</strong> español/a, mexicano/a",
-          "<strong>Relación:</strong> amigo/a, hermano/a"
-        ]
+        "formato": "grid",
+        "items": ["<strong>El</strong> pelo", "<strong>La</strong> casa", "<strong>Los</strong> ojos", "<strong>Las</strong> manos"]
       },
-      "vocabulario_util": "español, mexicano, familiar, social",
-      "consejo": "Muchos terminan en <strong>-o / -a</strong> igual que los calificativos: <em>español / española.</em>"
+      "vocabulario_util": "el, la, los, las",
+      "consejo": "El artículo debe tener el mismo género que el sustantivo que acompaña en toda la frase completa."
     },
     {
       "id": 5,
       "categoria": "Gramática",
-      "tema": "El género de los adjetivos",
-      "explicacion": "En español, los adjetivos cambian según si hablamos de un <strong>hombre</strong> (masculino) o una <strong>mujer</strong> (femenino).",
+      "tema": "El artículo indefinido",
+      "explicacion": "Son palabras como un o una que sirven para identificar cosas generales que todavía no conocemos en el mensaje.",
       "ejemplos": {
-        "formato": "grid",
-        "items": ["Él → Alto", "Ella → Alta", "Él → Guapo", "Ella → Guapa"]
+        "formato": "lista",
+        "items": ["Él es <strong>un</strong> chico muy alto.", "Ella tiene <strong>una</strong> bicicleta roja."]
       },
-      "vocabulario_util": null,
-      "consejo": "¡Mira siempre si la persona es hombre o mujer para elegir la terminación correcta!"
+      "vocabulario_util": "un, una, unos, unas",
+      "consejo": "Se utiliza mucho para describir por primera vez las características de una persona o de un objeto."
     },
     {
       "id": 6,
       "categoria": "Gramática",
-      "tema": "El número de los adjetivos",
-      "explicacion": "Cuando hablamos de <strong>una</strong> persona → singular. Cuando hablamos de <strong>varias</strong> → plural (normalmente añadimos <strong>-s</strong>).",
+      "tema": "Concordancia",
+      "explicacion": "En español, el género y el número de las palabras deben ser iguales para que la frase sea muy clara.",
       "ejemplos": {
-        "formato": "lista",
-        "items": [
-          "Ojo marrón → <strong>Ojos marrones</strong>",
-          "Él es joven → <strong>Ellos son jóvenes</strong>"
-        ]
+        "formato": "grid",
+        "items": ["Ella es <strong>morena</strong>", "Él es <strong>moreno</strong>", "Ellas son <strong>morenas</strong>", "Ellos son <strong>morenos</strong>"]
       },
-      "vocabulario_util": "singular, plural, -s, -es",
-      "consejo": "Si el adjetivo termina en consonante (como <em>joven</em>), el plural es <strong>jóvenes</strong>."
+      "vocabulario_util": "género, número, masculino, femenino",
+      "consejo": "Revisa siempre que el adjetivo termine en \"a\" si hablas de una mujer para evitar errores comunes."
     },
     {
       "id": 7,
-      "categoria": "Gramática",
-      "tema": "¿Dónde va el adjetivo?",
-      "explicacion": "En español, los adjetivos <strong>normalmente van después</strong> del nombre o después del verbo <strong>ser/tener</strong>.",
+      "categoria": "Nociones generales",
+      "tema": "Existencia",
+      "explicacion": "Usamos formas verbales específicas para indicar que algo está presente en un lugar determinado de forma muy sencilla.",
       "ejemplos": {
         "formato": "lista",
-        "items": [
-          "✓ <strong>Pelo negro</strong>",
-          "✗ <em>negro pelo</em>"
-        ]
+        "items": ["Aquí <strong>hay</strong> una foto de mi amigo.", "En la clase <strong>hay</strong> sillas."]
       },
-      "vocabulario_util": null,
-      "consejo": "Es diferente del inglés. En español decimos <strong>pelo largo</strong>, no <em>largo pelo</em>."
+      "vocabulario_util": "hay, estar, existir, presente",
+      "consejo": "La palabra \"hay\" nunca cambia de forma, aunque hables de una cosa o de muchas cosas diferentes."
     },
     {
       "id": 8,
       "categoria": "Nociones específicas",
-      "tema": "Partes del cuerpo",
-      "explicacion": "Estas palabras nos ayudan a describir el <strong>aspecto exterior</strong> de una persona.",
+      "tema": "Nacionalidad",
+      "explicacion": "Estas palabras sirven para explicar el país de origen de una persona cuando nos presentamos o conocemos gente nueva.",
       "ejemplos": {
         "formato": "grid",
-        "items": ["El pelo", "Los ojos", "La nariz", "La boca", "La barba", "El bigote"]
+        "items": ["Español", "Mexicana", "Francés", "Italiana"]
       },
-      "vocabulario_util": "pelo, ojos, nariz, boca, barba, bigote",
-      "consejo": "Usamos mucho <strong>tener + parte del cuerpo</strong>: <em>Tiene el pelo rubio.</em>"
+      "vocabulario_util": "español, mexicana, francés, italiana, chino",
+      "consejo": "Las nacionalidades en español se escriben con letra minúscula, a diferencia de los nombres de los países."
     },
     {
       "id": 9,
-      "categoria": "Nociones específicas",
-      "tema": "Hombre o mujer",
-      "explicacion": "En las descripciones usamos palabras diferentes según si es un <strong>chico/hombre</strong> o una <strong>chica/mujer</strong>.",
+      "categoria": "Ortografía y Pronunciación",
+      "tema": "Segmentación",
+      "explicacion": "Es muy importante separar las frases con pausas naturales para que las otras personas entiendan bien nuestro mensaje oral.",
       "ejemplos": {
         "formato": "lista",
-        "items": [
-          "Es un <strong>chico</strong> guapo.",
-          "Es una <strong>chica</strong> guapa."
-        ]
+        "items": ["No, Elena. <em>[pausa]</em> Ella es de estatura media.", "Sí, <em>[pausa]</em> tengo la foto aquí."]
       },
-      "vocabulario_util": "hombre, mujer, chico, chica, señor, señora",
-      "consejo": "Recuerda cambiar el adjetivo según el género: <strong>guapo ↔ guapa</strong>, <strong>alto ↔ alta</strong>."
+      "vocabulario_util": "pausa, silencio, ritmo, hablar",
+      "consejo": "Respira un momento cuando veas un punto o una coma para que tu pronunciación suene más natural."
     },
     {
       "id": 10,
-      "categoria": "Ortografía",
-      "tema": "La tilde diacrítica: él vs. el",
-      "explicacion": "La tilde sirve para distinguir dos palabras que se escriben igual pero significan cosas diferentes.",
+      "categoria": "Ortografía y Pronunciación",
+      "tema": "Entonación enunciativa",
+      "explicacion": "Cuando afirmamos algo, el tono de nuestra voz debe bajar un poco al llegar al final de la frase.",
       "ejemplos": {
         "formato": "lista",
-        "items": [
-          "<strong>Él</strong> es rubio. <em>(Él = He / Persona)</em>",
-          "<strong>El</strong> pelo es rubio. <em>(El = The / Artículo)</em>"
-        ]
+        "items": ["Tengo la información.", "Ella vive en Madrid."]
       },
-      "vocabulario_util": "él, el, tú, tu, sí, si",
-      "consejo": "<strong>Él</strong> (con tilde) = he (persona). <strong>El</strong> (sin tilde) = the (artículo)."
+      "vocabulario_util": "tono, final, voz, bajar",
+      "consejo": "No subas el tono al final si no estás preguntando algo, así evitarás confundir a tus oyentes."
     },
     {
       "id": 11,
-      "categoria": "Nociones generales",
-      "tema": "Pelo o cabello",
-      "explicacion": "En español hay palabras que significan exactamente lo mismo. Puedes usar cualquiera.",
+      "categoria": "Ortografía",
+      "tema": "Punto",
+      "explicacion": "Este signo gráfico se utiliza para indicar que una idea ha terminado completamente y podemos empezar una idea nueva.",
       "ejemplos": {
         "formato": "lista",
-        "items": [
-          "<strong>Pelo</strong> = <strong>Cabello</strong>"
-        ]
+        "items": ["Es Lucía<strong>.</strong>", "Vivo en España<strong>.</strong> Me gusta mucho."]
       },
-      "vocabulario_util": "pelo, cabello",
-      "consejo": "<strong>Pelo</strong> es más cotidiano y frecuente en nivel A1."
+      "vocabulario_util": "punto, final, signo, escritura",
+      "consejo": "Después de escribir un punto, recuerda siempre empezar la siguiente palabra con una letra mayúscula bien clara."
     },
     {
       "id": 12,
-      "categoria": "Funciones",
-      "tema": "Preguntar por la descripción",
-      "explicacion": "Usamos <strong>¿Cómo…?</strong> para preguntar por la descripción de una persona.",
+      "categoria": "Tácticas",
+      "tema": "Atenuación",
+      "explicacion": "Usamos formas de hablar suaves y moderadas para describir a las personas sin ser demasiado directos o resultar groseros.",
       "ejemplos": {
         "formato": "lista",
-        "items": [
-          "¿Cómo es tu hermano?",
-          "¿Cómo es ella?"
-        ]
+        "items": ["Ella es de <strong>estatura media</strong>.", "Es <strong>un poco</strong> tímido."]
       },
-      "vocabulario_util": "cómo, quién, qué, cuál",
-      "consejo": "Es la pregunta más útil para pedir descripciones físicas o de carácter."
+      "vocabulario_util": "medio, normal, un poco, bastante",
+      "consejo": "Utiliza \"un poco\" antes de un adjetivo negativo para sonar más educado y amable al hablar siempre."
+    },
+    {
+      "id": 13,
+      "categoria": "Tácticas",
+      "tema": "Personal",
+      "explicacion": "Esta estrategia sirve para centrar toda nuestra comunicación en los sentimientos y las características de las personas que conocemos.",
+      "ejemplos": {
+        "formato": "lista",
+        "items": ["Ellos son <strong>muy buenos amigos</strong>.", "Me cae <strong>muy bien</strong>."]
+      },
+      "vocabulario_util": "amigos, gente, familia, personas",
+      "consejo": "Hablar de las personas ayuda a practicar los pronombres y los verbos de descripción de forma muy efectiva."
     }
   ],
   "resumen": {
