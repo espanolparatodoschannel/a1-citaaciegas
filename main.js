@@ -63,6 +63,13 @@ const CATEGORIA = {
         bg: 'bg-indigo-50',
         border: 'border-indigo-100',
         icono: 'fas fa-align-left'
+    },
+    'Pronunciación': {
+        gradient: 'card-gradient-4',
+        badge: 'text-rose-600',
+        bg: 'bg-rose-50',
+        border: 'border-rose-100',
+        icono: 'fas fa-volume-up'
     }
 };
 
