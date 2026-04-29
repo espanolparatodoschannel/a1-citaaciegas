@@ -8,12 +8,12 @@
 // Configuración visual por categoría PCIC
 // =============================================
 const CATEGORIA = {
-    'Funciones': {
+    'Objetivos generales': {
         gradient: 'card-gradient-1',
         badge: 'text-indigo-600',
         bg: 'bg-indigo-50',
         border: 'border-indigo-100',
-        icono: 'fas fa-comment-dots'
+        icono: 'fas fa-bullseye'
     },
     'Gramática': {
         gradient: 'card-gradient-2',
@@ -21,6 +21,41 @@ const CATEGORIA = {
         bg: 'bg-emerald-50',
         border: 'border-emerald-100',
         icono: 'fas fa-book'
+    },
+    'Pronunciación y prosodia': {
+        gradient: 'card-gradient-4',
+        badge: 'text-rose-600',
+        bg: 'bg-rose-50',
+        border: 'border-rose-100',
+        icono: 'fas fa-volume-up'
+    },
+    'Ortografía': {
+        gradient: 'card-gradient-4',
+        badge: 'text-rose-600',
+        bg: 'bg-rose-50',
+        border: 'border-rose-100',
+        icono: 'fas fa-spell-check'
+    },
+    'Funciones': {
+        gradient: 'card-gradient-1',
+        badge: 'text-indigo-600',
+        bg: 'bg-indigo-50',
+        border: 'border-indigo-100',
+        icono: 'fas fa-comment-dots'
+    },
+    'Tácticas y estrategias pragmáticas': {
+        gradient: 'card-gradient-2',
+        badge: 'text-emerald-600',
+        bg: 'bg-emerald-50',
+        border: 'border-emerald-100',
+        icono: 'fas fa-chess'
+    },
+    'Géneros discursivos y productos textuales': {
+        gradient: 'card-gradient-1',
+        badge: 'text-indigo-600',
+        bg: 'bg-indigo-50',
+        border: 'border-indigo-100',
+        icono: 'fas fa-align-left'
     },
     'Nociones generales': {
         gradient: 'card-gradient-3',
@@ -35,41 +70,6 @@ const CATEGORIA = {
         bg: 'bg-amber-50',
         border: 'border-amber-100',
         icono: 'fas fa-globe'
-    },
-    'Ortografía y Pronunciación': {
-        gradient: 'card-gradient-4',
-        badge: 'text-rose-600',
-        bg: 'bg-rose-50',
-        border: 'border-rose-100',
-        icono: 'fas fa-spell-check'
-    },
-    'Ortografía': {
-        gradient: 'card-gradient-4',
-        badge: 'text-rose-600',
-        bg: 'bg-rose-50',
-        border: 'border-rose-100',
-        icono: 'fas fa-spell-check'
-    },
-    'Tácticas': {
-        gradient: 'card-gradient-2',
-        badge: 'text-emerald-600',
-        bg: 'bg-emerald-50',
-        border: 'border-emerald-100',
-        icono: 'fas fa-chess'
-    },
-    'Géneros': {
-        gradient: 'card-gradient-1',
-        badge: 'text-indigo-600',
-        bg: 'bg-indigo-50',
-        border: 'border-indigo-100',
-        icono: 'fas fa-align-left'
-    },
-    'Pronunciación': {
-        gradient: 'card-gradient-4',
-        badge: 'text-rose-600',
-        bg: 'bg-rose-50',
-        border: 'border-rose-100',
-        icono: 'fas fa-volume-up'
     }
 };
 

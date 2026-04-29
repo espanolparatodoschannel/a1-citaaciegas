@@ -76,7 +76,7 @@ Cada ficha JSON debe seguir esta estructura exacta:
 
 **Reglas del JSON:**
 
-1. **`categoria`**: Usa el nombre EXACTO de la categoría tal como aparece en los datos de entrada. NO renombres, NO fusiones ni modifiques el nombre de la categoría. Si los datos dicen "Pronunciación", escribe "Pronunciación", NO "Ortografía y Pronunciación".
+1. **`categoria`**: Usa el nombre EXACTO de la categoría tal como aparece en los datos de entrada. NO renombres, NO fusiones ni modifiques el nombre de la categoría. (Ejemplos oficiales: "Objetivos generales", "Gramática", "Pronunciación y prosodia", "Ortografía", "Funciones", "Tácticas y estrategias pragmáticas", "Géneros discursivos y productos textuales", "Nociones generales", "Nociones específicas").
 2. **`ejemplos.formato`**: Elige el formato más adecuado entre estos 3 ÚNICOS formatos:
    - `"lista"` → `"items": ["Frase 1", "Frase 2"]` — Para frases sueltas, reglas o ejemplos independientes.
    - `"dialogo"` → `"items": [{"pregunta": "...", "respuesta": "..."}]` — Para intercambios conversacionales de pregunta-respuesta.

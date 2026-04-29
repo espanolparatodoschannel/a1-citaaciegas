@@ -138,7 +138,7 @@
     },
     {
       "id": 9,
-      "categoria": "Pronunciación",
+      "categoria": "Pronunciación y prosodia",
       "tema": "Segmentación",
       "explicacion": "Es muy importante separar las frases con pausas naturales para que las otras personas entiendan bien nuestro mensaje oral.",
       "ejemplos": {
@@ -153,7 +153,7 @@
     },
     {
       "id": 10,
-      "categoria": "Pronunciación",
+      "categoria": "Pronunciación y prosodia",
       "tema": "Entonación enunciativa",
       "explicacion": "Cuando afirmamos algo, el tono de nuestra voz debe bajar un poco al llegar al final de la frase.",
       "ejemplos": {
@@ -183,7 +183,7 @@
     },
     {
       "id": 12,
-      "categoria": "Tácticas",
+      "categoria": "Tácticas y estrategias pragmáticas",
       "tema": "Atenuación",
       "explicacion": "Usamos formas de hablar suaves y moderadas para describir a las personas sin ser demasiado directos o resultar groseros.",
       "ejemplos": {
@@ -198,7 +198,7 @@
     },
     {
       "id": 13,
-      "categoria": "Tácticas",
+      "categoria": "Tácticas y estrategias pragmáticas",
       "tema": "Personal",
       "explicacion": "Esta estrategia sirve para centrar toda nuestra comunicación en los sentimientos y las características de las personas que conocemos.",
       "ejemplos": {
