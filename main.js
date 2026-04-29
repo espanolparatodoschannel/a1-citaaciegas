@@ -5,45 +5,69 @@
  */
 
 // =============================================
-// Configuración visual por tipo de ficha
+// Configuración visual por categoría PCIC
 // =============================================
-const TIPO = {
-    expresiones: {
+const CATEGORIA = {
+    'Funciones': {
         gradient: 'card-gradient-1',
         badge: 'text-indigo-600',
         bg: 'bg-indigo-50',
         border: 'border-indigo-100',
         icono: 'fas fa-comment-dots'
     },
-    gramatica: {
+    'Gramática': {
         gradient: 'card-gradient-2',
         badge: 'text-emerald-600',
         bg: 'bg-emerald-50',
         border: 'border-emerald-100',
         icono: 'fas fa-book'
     },
-    vocabulario: {
+    'Nociones generales': {
         gradient: 'card-gradient-3',
         badge: 'text-amber-600',
         bg: 'bg-amber-50',
         border: 'border-amber-100',
         icono: 'fas fa-font'
     },
-    reglas: {
-        gradient: 'card-gradient-2',
-        badge: 'text-emerald-600',
-        bg: 'bg-emerald-50',
-        border: 'border-emerald-100',
-        icono: 'fas fa-ruler'
+    'Nociones específicas': {
+        gradient: 'card-gradient-3',
+        badge: 'text-amber-600',
+        bg: 'bg-amber-50',
+        border: 'border-amber-100',
+        icono: 'fas fa-globe'
     },
-    ortografia: {
+    'Ortografía y Pronunciación': {
         gradient: 'card-gradient-4',
         badge: 'text-rose-600',
         bg: 'bg-rose-50',
         border: 'border-rose-100',
         icono: 'fas fa-spell-check'
+    },
+    'Ortografía': {
+        gradient: 'card-gradient-4',
+        badge: 'text-rose-600',
+        bg: 'bg-rose-50',
+        border: 'border-rose-100',
+        icono: 'fas fa-spell-check'
+    },
+    'Tácticas': {
+        gradient: 'card-gradient-2',
+        badge: 'text-emerald-600',
+        bg: 'bg-emerald-50',
+        border: 'border-emerald-100',
+        icono: 'fas fa-chess'
+    },
+    'Géneros': {
+        gradient: 'card-gradient-1',
+        badge: 'text-indigo-600',
+        bg: 'bg-indigo-50',
+        border: 'border-indigo-100',
+        icono: 'fas fa-align-left'
     }
 };
+
+// Estilo por defecto si la categoría no existe en el mapa
+const DEFAULT_CFG = CATEGORIA['Funciones'];
 
 // =============================================
 // Renderizado de ejemplos según formato
@@ -81,8 +105,8 @@ function renderEjemplos(ejemplos, cfg) {
 // Construir una ficha
 // =============================================
 function buildFicha(ficha, index) {
-    const cfg = TIPO[ficha.tipo] || TIPO.vocabulario;
-    const label = `${ficha.id}. ${ficha.tipo.charAt(0).toUpperCase() + ficha.tipo.slice(1)}`;
+    const cfg = CATEGORIA[ficha.categoria] || DEFAULT_CFG;
+    const label = `${ficha.id}. ${ficha.categoria}`;
 
     return `
         <section class="ficha-card glass-effect rounded-3xl overflow-hidden shadow-lg border border-white/40">
@@ -90,9 +114,9 @@ function buildFicha(ficha, index) {
             <div class="p-6 md:p-8">
                 <span class="text-xs font-bold uppercase tracking-widest ${cfg.badge} mb-2 block">${label}</span>
                 <h2 class="text-2xl font-bold mb-2">${ficha.tema}</h2>
-                ${ficha.uso ? `<div class="inline-block px-3 py-1 rounded-xl text-sm font-bold mb-4 ${cfg.bg} ${cfg.badge} border ${cfg.border}">${ficha.uso}</div>` : ''}
                 <p class="mb-4 text-slate-700 leading-relaxed text-sm">${ficha.explicacion}</p>
                 ${renderEjemplos(ficha.ejemplos, cfg)}
+                ${ficha.vocabulario_util ? `<div class="mb-4 px-3 py-2 rounded-xl text-xs ${cfg.bg} border ${cfg.border}"><strong class="${cfg.badge}">Vocabulario útil:</strong> ${ficha.vocabulario_util}</div>` : ''}
                 <div class="mt-auto pt-4 border-t border-slate-100">
                     <p class="text-xs text-indigo-500 font-semibold">
                         <i class="fas fa-lightbulb mr-1"></i> ${ficha.consejo}
